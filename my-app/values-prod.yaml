@@ -1,6 +1,6 @@
 replicaCount: 3
 image:
-  repository: my-app
+  repository: nginx
   tag: prod
 service:
   type: ClusterIP
