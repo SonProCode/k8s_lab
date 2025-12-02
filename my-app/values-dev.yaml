@@ -1,0 +1,7 @@
+replicaCount: 1
+image:
+  repository: my-app
+  tag: dev
+service:
+  type: ClusterIP
+  port: 80
