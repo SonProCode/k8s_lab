@@ -5,3 +5,11 @@ image:
 service:
   type: ClusterIP
   port: 80
+ingress:
+  enabled: true
+  hosts:
+    - host: sonth-my-app.com
+  tls:
+    - secretName: prod-tls
+      hosts:
+        - sonth-my-app.com

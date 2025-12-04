@@ -5,3 +5,11 @@ image:
 service:
   type: ClusterIP
   port: 80
+ingress:
+  enabled: true
+  hosts:
+    - host: dev.sonth-my-app.com
+  tls:
+    - secretName: dev-tls
+      hosts:
+        - dev.sonth-my-app.com
